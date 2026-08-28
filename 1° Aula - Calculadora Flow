@@ -1,1 +1,0 @@
-# Algoritmo-e-pensamento-computacional
