@@ -1,1 +1,22 @@
+#include <stdio.h> 
+#include <math.h>
 
+int main() {
+    int x = 7, y = 5;
+    int soma = x + y;
+    int sub = x - y;
+    int mult = x * y;
+    float div = (float)x / y;
+    int resto = x % y;
+    double base = 7.0;
+    double expoente = 5.0;
+    double = pow(base, expoente);
+    
+    printf("X = %d e y = %d\n", x, y);
+    printf("Soma = %d\n", soma);
+    printf("Subtração = %d\n", sub);
+    printf("Multiplicação = %d\n", mult);
+    printf("Divisão (x/y) = %.2f\n", div);
+    printf("Resto da divisão (x %% y) = %d\n", resto);
+    printf("Expotencial = %,2f\n" double);
+    return 0;
