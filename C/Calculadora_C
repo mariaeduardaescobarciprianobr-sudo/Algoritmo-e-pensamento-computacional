@@ -33,4 +33,17 @@ int main() {
     printf("Divisão (x/y) = %.2f\n", div);
     printf("Resto da divisão (x %% y) = %d\n", resto);
     printf("Expotencial = %,2f\n" double);
+    printf("Raiz deX = %.2f\n", raizX);
+    printf("Raiz deY = %.2f\n", raizY);
+    printf("Cubo deX = %.2f\n", cuboX);
+    printf("Cubo deY = %.2f\n", cuboY);
+    printf("Valor absoluto da diferença = %d\n", absol);
+    printf("Maior valor = %d\n", maior);
+    printf("Menor valor = %d\n", menor);
+    printf("Média = %.2f\n", media);
+    printf("X em porcentagem de Y = %.2f%%\n", porcen);
+    printf("Quadrado de X = %d\n", quadraX);
+    printf("Quadrado de Y = %d\n", quadraY);
+    printf("Logaritmo X = %.2f\n", logaritmo);
+    printf("Exponencial de X = %.2f\n", exponencial);
     return 0;
