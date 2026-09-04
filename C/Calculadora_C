@@ -10,7 +10,7 @@ int main() {
     int resto = x % y;
     double base = 7.0;
     double expoente = 5.0;
-    double = pow(7.0, 5.0);
+    double = pow(x, y);
     
 
     
