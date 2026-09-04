@@ -10,7 +10,21 @@ int main() {
     int resto = x % y;
     double base = 7.0;
     double expoente = 5.0;
-    double = pow(base, expoente);
+    double = pow(7.0, 5.0);
+    double raizX = sqrt(x);
+    double raizY = sqrt(y);
+    double cuboX = pow(x, 3);
+    double cuboY = pow(y, 3);
+    int absol = abs(x - y);
+    int maior = (x > y) ? x : y;
+    int menor = (x < y) ? x : y;
+    float media = (float)(x + y) / 2;
+    float porcen = ((float)x / y) * 100;
+    int quadra(X) = x * x;
+    int quadra(Y) = y * y;
+    double log = log(x);
+    double exponen = exp(x);
+
     
     printf("X = %d e y = %d\n", x, y);
     printf("Soma = %d\n", soma);
