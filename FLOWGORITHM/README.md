@@ -1,3 +1,9 @@
+------------
+# Instruções para uso
+------------
+O código irá solicitar que você escolha uma das opções de operação, a que o usuário desejar. Depois de selecionada, ele irá pedir os valores, podendo ser um ou dois para que consiga realizar o cálculo desejado, depois disso ele mostrará o resultado. 
+
+------------
 # Resumo do meu código
 ------------
 ###Variáveis
