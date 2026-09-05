@@ -1,3 +1,17 @@
+--------------
+# Instruções de uso
+--------------
+Para iniciar o código, primeiro é necessário digitar o valor da temperatura, sem especificar, pois ele interpretará a temperatura no momento em que for escolhido a forma de conversão no menu de opções.
+
+O menu de conversão contém todas as seis formas de conversão de temperatura, sendo elas:
+Kelvin > Celsius
+Kelvin > Fahrenheit
+Celsius > Kelvin
+Celsius > Fahrenheit
+Fahrenheit > Celsius
+Fahrenheit > Kelvin
+
+--------------
 # Resumo do meu código
 --------------
 ### Biblioteca
