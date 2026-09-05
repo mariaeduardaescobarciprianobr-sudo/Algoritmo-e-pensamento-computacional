@@ -1,6 +1,27 @@
 #include <stdio.h>
 #include <math.h>
 
+//Soma
+//Subtração
+//Multiplicação
+//Divisão
+//Potenciação
+//Raiz quadrada
+//Raiz cúbica
+//Seno
+//Cosseno
+//Tangente
+//Logaritmo natural
+//Logaritmo na base 10
+//Valor absoluto
+//Cálculo de porcentagem
+//Média aritmética
+//Conversão de graus para radianos
+//Conversão de radianos para graus
+//Cálculo de área do círculo
+//Cálculo de área do retângulo
+//Cálculo de hipotenusa
+
 int main() {
     int x, y, opção = -1;
 
