@@ -13,3 +13,4 @@ Para alguns o B já era usado para realizar a conta somente com um número, como
 O C, em todos no qual aparece, era a realização da conta utilizando os números A e B, determinados pelo usuário.
 
 ### Saída de código
+output é a saída do código, ou seja, a resposta da operação.
