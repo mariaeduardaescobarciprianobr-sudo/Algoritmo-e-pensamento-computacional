@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main() {
-    int x, y, opção;
+    int x, y, opção = -1;
 
     printf("Digite o valor de X: ");
     scanf("%d", &x);
@@ -13,118 +13,144 @@ int main() {
     while (opção != 0) {
         printf("\nX = %d e Y = %d\n", x, y);
 
-        printf("\nEscolha uma operação: ");
-        printf("1-Soma\n");
-
-        printf("2-Subtração\n");
-
-        printf("3-Multiplicacao\n");
-
-        printf("4-Divisão\n");
-
-        printf("5-Resto da divisão\n");
-
-        printf("6-Modulo de X\n");
-
-        printf("7-Potência de X elevado a Y\n");
-
-        printf("8-Raiz quadrada de X\n");
-
-        printf("9-Raiz quadrada de Y\n");
-
-        printf("10-Média entre X e Y\n");
-
-        printf("11-Dobro de X\n");
-
-        printf("12-Triplo de Y\n");
-
-        printf("13-Quadrado de X\n");
-
-        printf("14-Quadrado de Y\n");
-
-        printf("15-Cubo de X\n");
-
-        printf("16-Porcentagem de X em Y\n");
-
-        printf("17-Porcentagem de Y em X\n");
-
-        printf("18-Distância entre X e Y\n");
-
-        printf("19-X + 10\n");
-
-        printf("20-Y - 3\n");
-
-        printf("0-Sair\n");
+        printf("\nEscolha uma operação:\n");
+        
+        printf("1. Soma\n");
+        
+        printf("2. Subtração\n");
+        
+        printf("3. Multiplicação\n");
+        
+        printf("4. Divisão\n");
+        
+        printf("5. Potenciação\n");
+        
+        printf("6. Raiz quadrada\n");
+        
+        printf("7. Raiz cúbica\n");
+        
+        printf("8. Seno\n");
+        
+        printf("9. Cosseno\n");
+        
+        printf("10. Tangente\n");
+        
+        printf("11. Logaritmo natural\n");
+        
+        printf("12. Logaritmo na base 10\n");
+        
+        printf("13. Valor absoluto\n");
+        
+        printf("14. Cálculo de porcentagem\n");
+        
+        printf("15. Média aritmética\n");
+        
+        printf("16. Conversão de graus para radianos\n");
+        
+        printf("17. Conversão de radianos para graus\n");
+        
+        printf("18. Área do círculo\n");
+        
+        printf("19. Área do retângulo\n");
+        
+        printf("20. Cálculo de hipotenusa\n");
+        
+        printf("0. Sair disso aqui\n");
 
         scanf("%d", &opção);
 
         switch (opção) {
-            case 1: printf("Soma = %d\n", x + y); break;
+            case 1:
+                printf("Soma = %d\n", x + y); break;
 
-            case 2: printf("Subtração = %d\n", x - y); break;
+            case 2:
+                printf("Subtração = %d\n", x - y); break;
 
-            case 3: printf("Multiplicação = %d\n", x * y); break;
+            case 3:
+                printf("Multiplicação = %d\n", x * y); break;
 
-            case 4: if (y != 0) {printf("Divisão = %.2f\n", (float)x / y);
+            case 4:
+                if (y != 0) {
+                    printf("Divisão = %.2f\n", (double)x / y);
                 } else {
-                    printf("Desde quando se faz divisão com zero, rapaz?.\n");
+                    printf("Como diabos eu diviria isso por zero?\n");
                 } break;
 
-            case 5: if (y != 0) {
-                    printf("Resto da divisão = %d\n", x % y);
+            case 5:
+                printf("Potenciação = %.2f\n", pow(x, y)); break;
+
+            case 6:
+                if (x >= 0) {
+                    printf("Raiz quadrada de X = %.2f\n", sqrt(x));
                 } else {
-                    printf("Lá vem, desde quando se faz divisão com zero?.\n");
-                }break;
-
-            case 6: printf("Modulo de X = %.2f\n", fabs(x)); break;
-
-            case 7: printf("Potência de X elevado a Y = %.2f\n", pow(x, y)); break;
-
-            case 8: if (x >= 0) { printf("Raiz quadrada de X = %.2f\n", sqrt(x));
-                } else {
-                    printf("Num existe raiz real de X, euhein.\n");
+                    printf("Não existe raiz quadrada real de X.\n");
                 } break;
 
-            case 9: if (y >= 0) {
-                    printf("Raiz quadrada de Y = %.2f\n", sqrt(y));
+            case 7:
+                printf("Raiz cúbica de X = %.2f\n", cbrt(x)); break;
+
+            case 8:
+                printf("Seno de X = %.2f\n", sin(x)); break;
+
+            case 9:
+                printf("Cosseno de X = %.2f\n", cos(x)); break;
+
+            case 10:
+                printf("Tangente de X = %.2f\n", tan(x)); break;
+
+            case 11:
+                if (x > 0) {
+                    printf("Logaritmo natural de X = %.2f\n", log(x));
                 } else {
-                    printf("É doido? Não existe raiz quadrada de Y.\n");
+                    printf("CÉUS, olha só o logaritmo natural exige que o X maior que zero, pegou?!.\n");
                 } break;
 
-            case 10: printf("Média entre X e Y = %.2f\n", (float)(x + y) / 2); break;
-
-            case 11: printf("Dobro de X = %d\n", x * 2); break;
-
-            case 12: printf("Triplo de Y = %d\n", y * 3); break;
-
-            case 13: printf("Quadrado de X = %d\n", x * x); break;
-
-            case 14: printf("Quadrado de Y = %d\n", y * y); break;
-
-            case 15: printf("Cubo de X = %d\n", x * x * x); break;
-
-            case 16: if (y != 0) {
-                    printf("O x corresponde a %.2f%% de Y\n", (float)x / y * 100);
+            case 12:
+                if (x > 0) {
+                    printf("Logaritmo na base 10 de X = %.2f\n", log10(x));
                 } else {
-                    printf("Como que eu faço isso? Não faço milagre, não é possível calcular essa porcentagem.\n");
+                    printf("Olha só, aulinha boba, porque assim... o logaritmo na base 10 exige que o X maior que zero, entendeu? Vai lá e tente de novo!\n");
                 } break;
 
-            case 17: if (x != 0) {
-                    printf("Y corresponde a %.2f%% de X\n", (float)y / x * 100);
+            case 13: printf("Valor absoluto de X = %.2f\n", fabs(x)); break;
+
+            case 14:
+                if (y != 0) {
+                    printf("X corresponde a %.2f%% de Y\n", ((double)x / y) * 100);
                 } else {
-                    printf("Não dá, num é possível calcular a porcentagem.\n");
+                    printf("Como que calculo a porcentagem se o Y é igual a zero??!??\n");
                 } break;
 
-            case 18: printf("Distância entre X e Y = %.2f\n", fabs(x - y)); break;
+            case 15: printf("Média aritmética = %.2f\n", ((double)x + y) / 2); break;
 
-            case 19: printf("X + 10 = %d\n", x + 10); break;
+            case 16: printf("X em radianos = %.2f\n", x * M_PI / 180); break;
 
-            case 20: printf("Y - 3 = %d\n", y - 3); break;
+            case 17: printf("X em graus = %.2f\n", x * 180 / M_PI); break;
+
+            case 18: if (x >= 0) {
+                    printf("Área do círculo = %.2f\n", M_PI * x * x);
+                } else {
+                    printf("O raio não pode ser negativo.\n");
+                }
+                break;
+
+            case 19: if (x >= 0 && y >= 0) {
+                    printf("Área do retângulo = %.2f\n", (double)x * y);
+                } else {
+                    printf("Confia que a base e a altura são negativos, confia.Dá não, irmão.\n");
+                } break;
+
+            case 20: if (x >= 0 && y >= 0) {
+                    printf("Hipotenusa = %.2f\n", sqrt((double)x * x + (double)y * y));
+                } else {
+                    printf("Todo respeito, mas como diabos os lados vão ser ser negativos? IMPOSSÍVEL\n");
+                } break;
 
             case 0: printf("Programa encerrado.\n"); break;
 
-            default: printf("Tu é doido? Vai de 1 até 20, ai, ai... .\n");
+            default: printf("É doido? Eu sou vou de 1 a 20, aí aí...\n");
         }
     }
+
     return 0;
 }
