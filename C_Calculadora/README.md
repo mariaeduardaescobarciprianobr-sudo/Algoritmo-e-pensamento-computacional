@@ -1,3 +1,9 @@
+---------------------
+# Instruções de uso
+---------------------
+Para utilizar a calculadora em C, você deve dar DOIS valores, que são chamados de X e Y, após isso, ele dará a opção de você escolher uma operação com base no menu de opções, após a escolha, ele irá realizar o cálculo. Mas caso algum não seja possível, como por exemplo, divisão com zero ou outras operações com utilização desse número (0), a calculadora vai avisar de uma forma humorada e dar a oportunidade de tentar novamente, graças ao WHILE.
+
+---------------------
 # Resumo do meu código
 ---------------------
 ### Bibliotecas
