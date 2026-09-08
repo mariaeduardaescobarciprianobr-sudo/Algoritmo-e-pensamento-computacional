@@ -131,7 +131,8 @@ int main() {
                     printf("Área do círculo = %.2f\n", M_PI * x * x);
                 } else {
                     printf("O raio não pode ser negativo.\n");
-                } break;
+                }
+                break;
 
             case 19: if (x >= 0 && y >= 0) {
                     printf("Área do retângulo = %.2f\n", (double)x * y);
@@ -149,5 +150,7 @@ int main() {
 
             default: printf("É doido? Eu sou vou de 1 a 20, aí aí...\n");
         }
+    }
+
     return 0;
 }
