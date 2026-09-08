@@ -118,7 +118,7 @@ int main() {
                 if (y != 0) {
                     printf("X corresponde a %.2f%% de Y\n", ((double)x / y) * 100);
                 } else {
-                    printf("Como que calculo a porcentagem se o Y é igual a zero??!??\n");
+                    printf("Como que calculo a porcentagem se o Y é igual a zero?\n");
                 } break;
 
             case 15: printf("Média aritmética = %.2f\n", ((double)x + y) / 2); break;
