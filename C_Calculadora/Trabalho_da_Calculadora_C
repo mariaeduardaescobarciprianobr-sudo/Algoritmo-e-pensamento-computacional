@@ -2,155 +2,211 @@
 #include <math.h>
 
 int main() {
-    int x, y, opção = -1;
+int x, y, z = 0, opção = -1;
+int ano_nascimento, ano_atual;
 
-    printf("Digite o valor de X: ");
-    scanf("%d", &x);
 
-    printf("Digite o valor de Y: ");
-    scanf("%d", &y);
+printf("Digite o valor de X: ");
+scanf("%d", &x);
 
-    while (opção != 0) {
-        printf("\nX = %d e Y = %d\n", x, y);
+printf("Digite o valor de Y: ");
+scanf("%d", &y);
 
-        printf("\nEscolha uma operação:\n");
-        
-        printf("1. Soma\n");
-        
-        printf("2. Subtração\n");
-        
-        printf("3. Multiplicação\n");
-        
-        printf("4. Divisão\n");
-        
-        printf("5. Potenciação\n");
-        
-        printf("6. Raiz quadrada\n");
-        
-        printf("7. Raiz cúbica\n");
-        
-        printf("8. Seno\n");
-        
-        printf("9. Cosseno\n");
-        
-        printf("10. Tangente\n");
-        
-        printf("11. Logaritmo natural\n");
-        
-        printf("12. Logaritmo na base 10\n");
-        
-        printf("13. Valor absoluto\n");
-        
-        printf("14. Cálculo de porcentagem\n");
-        
-        printf("15. Média aritmética\n");
-        
-        printf("16. Conversão de graus para radianos\n");
-        
-        printf("17. Conversão de radianos para graus\n");
-        
-        printf("18. Área do círculo\n");
-        
-        printf("19. Área do retângulo\n");
-        
-        printf("20. Cálculo de hipotenusa\n");
-        
-        printf("0. Sair disso aqui\n");
+while (opção != 0) {
+    printf("\nX = %d, Y = %d e Z = %d\n", x, y, z);
 
-        scanf("%d", &opção);
+    printf("\nEscolha uma operação:\n");
 
-        switch (opção) {
-            case 1:
-                printf("Soma = %d\n", x + y); break;
+    printf("1. Soma\n");
 
-            case 2:
-                printf("Subtração = %d\n", x - y); break;
+    printf("2. Subtração\n");
 
-            case 3:
-                printf("Multiplicação = %d\n", x * y); break;
+    printf("3. Multiplicação\n");
 
-            case 4:
-                if (y != 0) {
-                    printf("Divisão = %.2f\n", (double)x / y);
-                } else {
-                    printf("Como diabos eu diviria isso por zero?\n");
-                } break;
+    printf("4. Divisão\n");
 
-            case 5:
-                printf("Potenciação = %.2f\n", pow(x, y)); break;
+    printf("5. Média aritmética\n");
 
-            case 6:
-                if (x >= 0) {
-                    printf("Raiz quadrada de X = %.2f\n", sqrt(x));
-                } else {
-                    printf("Não existe raiz quadrada real de X.\n");
-                } break;
+    printf("6. Porcentagem\n");
 
-            case 7:
-                printf("Raiz cúbica de X = %.2f\n", cbrt(x)); break;
+    printf("7. Regra de três\n");
 
-            case 8:
-                printf("Seno de X = %.2f\n", sin(x)); break;
+    printf("8. Conversão de temperatura\n");
 
-            case 9:
-                printf("Cosseno de X = %.2f\n", cos(x)); break;
+    printf("9. Conversão de unidades\n");
 
-            case 10:
-                printf("Tangente de X = %.2f\n", tan(x)); break;
+    printf("10. Cálculo de perímetro\n");
 
-            case 11:
-                if (x > 0) {
-                    printf("Logaritmo natural de X = %.2f\n", log(x));
-                } else {
-                    printf("CÉUS, olha só o logaritmo natural exige que o X maior que zero, pegou?!.\n");
-                } break;
+    printf("11. Cálculo de volume\n");
 
-            case 12:
-                if (x > 0) {
-                    printf("Logaritmo na base 10 de X = %.2f\n", log10(x));
-                } else {
-                    printf("Olha só, aulinha boba, porque assim... o logaritmo na base 10 exige que o X maior que zero, entendeu? Vai lá e tente de novo!\n");
-                } break;
+    printf("12. Cálculo de juros simples\n");
 
-            case 13: printf("Valor absoluto de X = %.2f\n", fabs(x)); break;
+    printf("13. Cálculo de desconto\n");
 
-            case 14:
-                if (y != 0) {
-                    printf("X corresponde a %.2f%% de Y\n", ((double)x / y) * 100);
-                } else {
-                    printf("Como que calculo a porcentagem se o Y é igual a zero??!??\n");
-                } break;
+    printf("14. Cálculo de velocidade média\n");
 
-            case 15: printf("Média aritmética = %.2f\n", ((double)x + y) / 2); break;
+    printf("15. Cálculo de consumo\n");
 
-            case 16: printf("X em radianos = %.2f\n", x * M_PI / 180); break;
+    printf("16. Número par ou ímpar\n");
 
-            case 17: printf("X em graus = %.2f\n", x * 180 / M_PI); break;
+    printf("17. Comparação entre valores\n");
 
-            case 18: if (x >= 0) {
-                    printf("Área do círculo = %.2f\n", M_PI * x * x);
-                } else {
-                    printf("O raio não pode ser negativo.\n");
-                }
-                break;
+    printf("18. Cálculo de idade\n");
 
-            case 19: if (x >= 0 && y >= 0) {
-                    printf("Área do retângulo = %.2f\n", (double)x * y);
-                } else {
-                    printf("Confia que a base e a altura são negativos, confia.Dá não, irmão.\n");
-                } break;
+    printf("19. Potenciação\n");
 
-            case 20: if (x >= 0 && y >= 0) {
-                    printf("Hipotenusa = %.2f\n", sqrt((double)x * x + (double)y * y));
-                } else {
-                    printf("Todo respeito, mas como diabos os lados vão ser ser negativos? IMPOSSÍVEL\n");
-                } break;
+    printf("0. Sair disso aqui\n");
 
-            case 0: printf("Programa encerrado.\n"); break;
+    scanf("%d", &opção);
 
-            default: printf("É doido? Eu sou vou de 1 a 20, aí aí...\n");
-        }
+    switch (opção) {
+        case 1: printf("Soma = %d\n", x + y); break;
+
+        case 2: printf("Subtração = %d\n", x - y); break;
+
+        case 3: printf("Multiplicação = %d\n", x * y); break;
+
+        case 4: if (y != 0) { 
+                printf("Divisão = %d\n", x / y);
+            } else {
+                printf("Como diabos eu vou dividir isso por zero?\n");
+            } break;
+
+        case 5: printf("Média aritmética = %d\n", (x + y) / 2); break;
+
+        case 6: if (y != 0) {
+                printf("X corresponde a %d%% de Y\n", (x * 100) / y);
+            } else {
+                printf("Não dá para calcular porcentagem com Y igual a zero.\n");
+            } break;
+
+        case 7: printf("Digite o valor de Z: ");
+            scanf("%d", &z);
+
+            if (x != 0) {
+                printf("Regra de três = %d\n", (y * z) / x);
+            } else {
+                printf("Não é possível dividir por zero.\n");
+            } break;
+
+        case 8: printf("Digite a temperatura em Celsius: ");
+            scanf("%d", &z);
+
+            printf("Fahrenheit = %d\n", (z * 9 / 5) + 32);
+            printf("Kelvin = %d\n", z + 273); break;
+
+        case 9: printf("Digite o valor em metros: ");
+            scanf("%d", &z);
+
+            printf("Quilômetros = %d km\n", z / 1000);
+            printf("Centímetros = %d cm\n", z * 100);
+            printf("Milímetros = %d mm\n", z * 1000); break;
+
+        case 10: printf("Digite a base: ");
+            scanf("%d", &x);
+
+            printf("Digite a altura: ");
+            scanf("%d", &y);
+
+            printf("Perímetro do retângulo = %d\n", 2 * (x + y)); break;
+
+        case 11: printf("Digite o comprimento: ");
+            scanf("%d", &x);
+
+            printf("Digite a largura: ");
+            scanf("%d", &y);
+
+            printf("Digite a altura: ");
+            scanf("%d", &z);
+
+            printf("Volume = %d\n", x * y * z); break;
+
+        case 12: printf("Digite o capital: ");
+            scanf("%d", &x);
+
+            printf("Digite a taxa de juros: ");
+            scanf("%d", &y);
+
+            printf("Digite o tempo: ");
+            scanf("%d", &z);
+
+            printf("Juros simples = %d\n", x * y * z / 100); break;
+
+        case 13: printf("Digite o preço: ");
+            scanf("%d", &x);
+
+            printf("Digite o desconto (%%): ");
+            scanf("%d", &y);
+
+            printf("Valor do desconto = %d\n", x * y / 100);
+            printf("Preço final = %d\n", x - (x * y / 100));
+            break;
+
+        case 14: printf("Digite a distância percorrida: ");
+            scanf("%d", &x);
+
+            printf("Digite o tempo gasto: ");
+            scanf("%d", &y);
+
+            if (y != 0) {
+                printf("Velocidade média = %d\n", x / y);
+            } else {
+                printf("O tempo não pode ser zero.\n");
+            } break;
+
+        case 15: printf("Digite a distância percorrida em km: ");
+            scanf("%d", &x);
+
+            printf("Digite o combustível gasto em litros: ");
+            scanf("%d", &y);
+
+            if (y != 0) {
+                printf("Consumo = %d km/L\n", x / y);
+            } else {
+                printf("O combustível não pode ser zero.\n");
+            } break;
+
+        case 16: if (x % 2 == 0) {
+                printf("X = %d é par.\n", x);
+            } else {
+                printf("X = %d é ímpar.\n", x);
+            }
+
+            if (y % 2 == 0) {
+                printf("Y = %d é par.\n", y);
+            } else {
+                printf("Y = %d é ímpar.\n", y);
+            } break;
+
+        case 17: if (x > y) {
+                printf("X é maior que Y.\n");
+            } else if (x < y) {
+                printf("Y é maior que X.\n");
+            } else {
+                printf("X e Y são iguais.\n");
+            } break;
+
+        case 18: printf("Digite o ano de nascimento: ");
+            scanf("%d", &ano_nascimento);
+
+            printf("Digite o ano atual: ");
+            scanf("%d", &ano_atual);
+
+            if (ano_atual >= ano_nascimento) {
+                printf("Idade = %d anos\n", ano_atual - ano_nascimento);
+            } else {
+                printf("O ano de nascimento não pode ser maior que o ano atual.\n");
+            } break;
+
+        case 19: printf("Potenciação = %.0f\n", pow(x, y)); break;
+
+        case 0: printf("Programa encerrado.\n"); break;
+
+        default:
+            printf("É doido? Eu só vou de 1 a 19, aí aí...\n");
     }
+}
+return 0;
 
-    return 0;
+
 }
