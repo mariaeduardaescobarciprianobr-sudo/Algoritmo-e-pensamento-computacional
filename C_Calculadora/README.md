@@ -1,7 +1,7 @@
 ---------------------
 # Instruções de uso
 ---------------------
-Para utilizar a calculadora em C, você deve dar DOIS e em outros casos, TRÊS valores, que são chamados de X, Y e Z, após isso, ele dará a opção de você escolher uma operação com base no menu de opções, após a escolha, ele irá realizar o cálculo. Mas caso algum não seja possível, como por exemplo, divisão com zero ou outras operações com utilização desse número (0), a calculadora vai avisar de uma forma humorada e dar a oportunidade de tentar novamente, graças ao WHILE.
+Para utilizar a calculadora em C, você deve dar DOIS valores, que são chamados de X e Y após isso, ele dará a opção de você escolher uma operação com base no menu de opções, após a escolha, ele irá realizar o cálculo. Mas caso algum não seja possível, como por exemplo, divisão com zero ou outras operações com utilização desse número (0), a calculadora vai avisar de uma forma humorada e dar a oportunidade de tentar novamente, graças ao WHILE.
 
 ---------------------
 # Resumo do meu código
@@ -10,7 +10,7 @@ Para utilizar a calculadora em C, você deve dar DOIS e em outros casos, TRÊS v
 As duas bibliotecas utilizadas foi a padrão para entrada e saída de dados(<stdio.h>) e a de matemática para conseguir utilizar algumas funções a mais e variar as operações mais avançadas(<math.h>).
 
 ### Variáveis
-As variáveis declaradas são 4 do tipo inteiro, opções de operações de 1 a 20 e os valores para o usuário colocar(x,y e algumas z), como regra de três.
+As variáveis declaradas são 4 do tipo inteiro, opções de operações de 1 a 20 e os valores para o usuário colocar(x,y)
 
 ### IF/Else
 Confesso que foi um pouco difícil fazer ela rodar no início, mas depois consegui aproveitar e colocar um pouco de humor na calculadora quando o usuário coloca um número que se pode realizar a conta, por exemplo em divisão com zero.
