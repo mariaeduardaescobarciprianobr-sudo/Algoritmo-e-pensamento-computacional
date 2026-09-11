@@ -1,11 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-//Kelvin > Celsius
-//Kelvin > Fahrenheit
-//Celsius > Kelvin
-//Celsius > Fahrenheit
-//Fahrenheit > Celsius
-//Fahrenheit > Kelvin
 
 int main() {
     int op;
